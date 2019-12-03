@@ -1,4 +1,6 @@
 #!/bin/bash
 #pwd
-ls
-/tmp/src/hello
+#ls
+g++ hello.cpp -o hello
+
+./hello
