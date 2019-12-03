@@ -1,6 +1,5 @@
 #!/bin/bash
-#pwd
-#ls
-g++ hello.cpp -o hello
+pwd
+ls
 
 ./hello
