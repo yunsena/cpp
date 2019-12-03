@@ -1,4 +1,5 @@
 cd /tmp/src
+yum install -y gcc-c++
 make all
 
 make install
