@@ -23,4 +23,4 @@ realclean:
 		| sed '\''s/\($*\)\.o[ :]*/\1.o $@ : /g'\'' > $@; \
 		[ -s $@ ] || rm -f $@'
 
-include	$(OBJS:.o=.d)
+include	$(OBJS)
