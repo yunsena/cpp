@@ -1,6 +1,6 @@
+
+
+pwd
+ls
 cd /tmp/src
-
-
-make all
-
-make install
+make
