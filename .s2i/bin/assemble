@@ -1,4 +1,4 @@
 pwd
 ls
 cd /tmp/src
-g++ -Wall -g Hello.cpp -o Hello
+make
