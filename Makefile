@@ -1,5 +1,5 @@
 CXX=		g++ $(CCFLAGS)
-HELLO=	helloworld.o
+HELLO=	hello.o
 OBJS = $(HELLO)
 
 LIBS=
@@ -9,7 +9,7 @@ CCFLAGES= -g
 all:	hello
 
 hello: $(HELLO)
-	$(CXX) -o helloworld $(HELLO) $(LIBS)
+	$(CXX) -o hello $(HELLO) $(LIBS)
   
 clean:
      rm -f $(OBJS)
@@ -23,4 +23,4 @@ realclean:
 		| sed '\''s/\($*\)\.o[ :]*/\1.o $@ : /g'\'' > $@; \
 		[ -s $@ ] || rm -f $@'
 
-include	$(OBJS)
+include	$(OBJS:.o=.d)
