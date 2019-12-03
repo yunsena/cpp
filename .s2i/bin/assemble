@@ -1,4 +1,4 @@
 cd /tmp/src
-#make all
+make all
 
 make install
