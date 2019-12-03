@@ -1,4 +1,4 @@
 #!/bin/bash
-pwd
-ls
+#pwd
+#ls
 /tmp/src/hello
