@@ -4,4 +4,4 @@ ls
 
 #make all
 
-#make install
+make install
