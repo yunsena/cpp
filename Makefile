@@ -12,10 +12,10 @@ hello: $(HELLO)
 	$(CXX) -o helloworld $(HELLO) $(LIBS)
   
 clean:
-     rm -f $(OBJS) $(OBJS:.o=.d)
+     rm -f $(OBJS)
      
 realclean:
-	rm -f $(OBJS) $(OBJS:.o=.d) hello 
+	rm -f $(OBJS) hello 
  
 # These lines ensure that dependencies are handled automatically.
 %.d:	%.cc
