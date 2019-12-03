@@ -1,7 +1,4 @@
 cd /tmp/src
-pwd
-ls
-
 #make all
 
 make install
