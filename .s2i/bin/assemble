@@ -1,4 +1,5 @@
 cd /tmp/src
+pwd
 ls
 yum install -y gcc-c++
 make all
