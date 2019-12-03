@@ -2,6 +2,6 @@ cd /tmp/src
 pwd
 ls
 
-make all
+#make all
 
-make install
+#make install
