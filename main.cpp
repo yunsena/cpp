@@ -37,7 +37,10 @@ void setup(void);
 void loop(void);
 
 int main(){ 
-	setup();
+	while(1)
+	{
+		setup();
+	}
 	return 0;
 }
 
