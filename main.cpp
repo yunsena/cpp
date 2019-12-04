@@ -37,15 +37,16 @@ void setup(void);
 void loop(void);
 
 int main(){ 
-	while(1)
-	{
-		setup();
-	}
+	setup();
 	return 0;
 }
 
 void setup(void){
 	// put your setup code here, to run once:
+	for(int count = 0; cout < 100; ++count)
+	{
+		std::cout <<count << " \n";
+	}
 	printf("%s \n", "Hello World");
 }
 
