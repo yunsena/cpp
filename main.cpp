@@ -43,10 +43,7 @@ int main(){
 
 void setup(void){
 	// put your setup code here, to run once:
-	for(int count = 0; cout < 100; ++count)
-	{
-		std::cout <<count << " \n";
-	}
+	printf("%s \n", "testeee")
 	printf("%s \n", "Hello World");
 }
 
