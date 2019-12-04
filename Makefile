@@ -1,27 +1,15 @@
-CC=gcc
-CFLAGS=-c -pedantic -Wall
-LDFLAGS=-pedantic -Wall
-SOURCES=main.cpp lib.cpp
-OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=Program
+CXX		= g++
+SRCS		= $(wildcard *.cpp) $(wildcard *.c)
+OBJS		= $(SRCS:.cpp=.o)
+TARGET		= out
 
-all: $(SOURCES) $(EXECUTABLE)
-	
-$(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-.cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
+all : $(TARGET)
+	$(CXX) -o $(TARGET) $(OBJS) 
 
-clean:
-	rm  *.o
+$(TARGET) :
+	$(CXX) -c $(SRCS)
 
-cleanall:
-	rm  *.o $(EXECUTABLE)
-
-cstart: all start
-
-start:
-	./$(EXECUTABLE)
-
-rebuild: cleanall all
+clean :
+	rm -f $(TARGET)
+	rm -f *.o
