@@ -2,5 +2,6 @@
 
 pwd
 ls
+yum install git
 cd /tmp/src
 make
